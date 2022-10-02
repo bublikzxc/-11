@@ -1,0 +1,57 @@
+<html>
+<head>
+	<style>
+@keyframes backgroundColorAnimation{
+from{
+background-color: blue;
+transition-property:transform;
+transition-duration: 5s;
+transform: translateX(500px);
+transition-timing-function: ease;
+}
+to{
+background-color:red;
+transition-property:transform;
+transition-duration: 5s;
+transform: translateX(0px);
+transition-timing-function: ease;
+}
+}
+@keyframes text1{
+from{
+
+}
+to{
+
+}
+}
+@keyframes text2{
+from{
+
+}
+to{
+
+}
+}
+	div{
+background-color: #ccc;
+width: 100px;
+height: 100px;
+margin: 40px 30px;
+border: 1px solid #152341;
+
+animation-name: backgroundColorAnimation, text1, text2;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+
+
+}
+
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+	<style>
+@keyframes padenie{
+22%,55%,80%{
+bottom:0;
+
+}
+0%{
+bottom:180px;
+left:0;
+animation-timing-function: ease-in;
+}
+40%{
+bottom:150px;
+animation-timing-function: ease-in;
+}
+70%{
+bottom:80px;
+animation-timing-function: ease-in;
+}
+90%{
+bottom:40px;
+animation-timing-function: ease-in;
+}
+100%{
+left: 200px;
+bottom:0;
+animation-timing-function: ease-out;
+}
+}
+#block{
+margin: 0px auto;
+width: 250px;
+height: 250px;
+border: 1px solid red;
+transform: translateY(100px);
+}
+#sharik{
+background-color: red;
+width:30px;
+height:30px;
+border-radius: 15px;
+position:absolute;
+
+animation: padenie 2.5s infinite;
+}
+	</style>
+</head>
+<body>
+<div id = "block"><div id = "sharik"></div></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+	<style>
+	div{
+background-color: #ccc;
+width: 120px;
+height: 120px;
+margin: 10px;
+padding: 40px 10px;
+box-sizing: border-box;
+border: 1px solid #333;
+display: inline-block;
+
+
+transition-property: background-color, transform,transform-origin;
+transition-duration: 2s;
+transition-timing-function: ease-in;
+}
+
+.transf1:hover{
+transition-property: transform,background-color;
+transition-duration: 2s;
+transform: rotate(45deg);
+transform-origin: center;
+background-color: red;
+transition-timing-function: ease;
+}
+.transf2:hover{
+transition-property: transform,background-color;
+transition-duration: 2s;
+transform: rotate(45deg);
+transform-origin: left top;
+background-color: blue;
+transition-timing-function: ease-out;
+}
+.transf3:hover{
+transition-property: transform,background-color;
+transition-duration: 2s;
+transform: rotate(45deg);
+transform-origin: right bottom;
+background-color: gray;
+}
+.transf4:hover{
+transition: transform background-color transform-origin 2s ease-in-out 500ms;
+transform: rotate(45deg);
+transform-origin: left bottom;
+background-color: orange;
+}
+	</style>
+</head>
+<body>
+<div class="transf1"></div>
+<div class="transf2">2</div>
+<div class="transf3"></div>
+<div class="transf4"></div>
+</body>
+</html>
